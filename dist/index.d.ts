@@ -10,4 +10,12 @@ declare function MenuItem(props: any): React.JSX.Element;
 
 declare function Select(props: any): React.JSX.Element;
 
-export { Button, FormControl, InputLabel, MenuItem, Select };
+declare function convertToLowerCase(sentence: String): string;
+
+declare const themes: {
+    light: string;
+    dark: string;
+    blue: string;
+};
+
+export { Button, FormControl, InputLabel, MenuItem, Select, convertToLowerCase, themes };
